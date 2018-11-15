@@ -35,11 +35,12 @@ class WelcomeComponent extends Component {
         return (
             <View style={styles.view1}>
                 <View style={styles.view2}>
-                    <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: 30 / 667 * height }}>
+                    <View style={styles.view3}>
                         <TouchableOpacity style={styles.view4} onPress={this.openGallery.bind(this)}>
                             {this.state.image
                                 ? <Image style={{ height: 100 / 667 * height, width: 100 / 375 * width, borderRadius: 50 }} source={{ uri: this.state.image }} />
-                                : <Icon name='ios-camera' size={43} color='#FF4500' />
+                                : <Icon name='ios-camera' size={43} color= '#3CB371'             // '#FF4500' 
+                                />
                             }
                         </TouchableOpacity>
                         <View style={{ flexDirection: 'column' }}>
@@ -64,7 +65,7 @@ const styles = {
     view2: {
         flex: 1,
         flexDirection: 'column',
-        backgroundColor: '#fff',
+        backgroundColor: '#3CB371',           //'#fff',
         borderWidth: 1,
         borderRadius: 5,
         borderColor: '#ddd',
@@ -76,11 +77,11 @@ const styles = {
         elevation: 10,
         backgroundColor: '#fff8f7'
     },
-    view3: {
-        //flex: 0.4,
-        // // alignSelf: 'center',
-        // justifyContent: 'center',
-        // alignItems: 'flex-start',
+    view3: { 
+        flexDirection: 'row', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        marginTop: 30 / 667 * height 
     },
     view4: {
         justifyContent: 'center',
@@ -90,7 +91,7 @@ const styles = {
         marginRight: 50 / 375 * width,
         borderRadius: 70,
         borderWidth: 1,
-        borderColor: '#FF4500',
+        borderColor: '#3CB371',      //'#FF4500',
         backgroundColor: '#DCDCDC'
     }
 }

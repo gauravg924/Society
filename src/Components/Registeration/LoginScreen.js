@@ -44,12 +44,12 @@ class LoginScreen extends Component {
     }.bind(this))
   }
 
-
+// ['#ff7f66', '#f2a393', '#ff7f66']  ORIGINAL COLORS
   render() {
     return (
       <View style={{ flex: 1 }}>
-      <StatusBar backgroundColor="#ff7f66" barStyle="light-content" />
-        <LinearGradient colors={['#ff7f66', '#f2a393', '#ff7f66']} start={{ x: 0, y: 1 }} end={{ x: 1, y: 0 }} locations={[0.1, .5, 1]} style={styles.linearGradient} >
+      <StatusBar backgroundColor="#3CB371" barStyle="light-content" />
+        <LinearGradient colors={['#3CB371',  '#3CB371', '#3CB371']} start={{ x: 0, y: 1 }} end={{ x: 1, y: 0 }} locations={[0.1, .5, 1]} style={styles.linearGradient} >
           {!this.state.otpScreen ?
             <View style={styles.mainView}>
               

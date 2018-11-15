@@ -25,9 +25,10 @@ export class Dashboard extends Component {
     renderRowItem = (itemOptions) => {
         return (
             <View>
-                <Ripple onPress={() => this.props.navigation.navigate('TableComponent')}>
+                <Ripple onPress={() => this.props.navigation.navigate('DetailList')}>
                     <View style={styles.cellStyle} >
-                        <Icon name={itemOptions.icon} size={43} color='#FF4500' />
+                        <Icon name={itemOptions.icon} size={43} color= '#3CB371'             // '#FF4500' 
+                        />
                         <Text style={{ fontSize: 14, color: '#808080', marginTop: 10 }}>
                             {itemOptions.title}
                         </Text>
