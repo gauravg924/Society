@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, AsyncStorage, ActivityIndicator, Image, NetInfo, Platform, StatusBar } from 'react-native';
 import Dimensions from 'Dimensions';
 import { StackNavigator, DrawerNavigator } from 'react-navigation';
-import { LoginScreen } from '../Registeration';
+import { LoginScreen, OtpScreen } from '../Registeration';
 import { Dashboard } from '../HomeScreen';
 import { DetailList } from '../DetailScreen';
 const { width, height } = Dimensions.get('window');
@@ -37,10 +37,11 @@ class StackNavigation extends React.PureComponent {
             LoginScreen: { screen: LoginScreen },
             Dashboard: { screen: Dashboard },
             DetailList: { screen: DetailList },
+            OtpScreen: {screen: OtpScreen}
         },
             {
                 //initialRouteName: this.state.loginId ? 'Dashboard': 'LoginScreen'
-                initialRouteName: 'DetailList'
+                initialRouteName: 'OtpScreen'
             }
         )
         return (

@@ -3,6 +3,8 @@ import { TouchableOpacity, Platform, Text, View, Image, StatusBar } from 'react-
 import { Header, Title, Left, Right, Button } from 'native-base';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { Menu, MenuOptions, MenuOption, MenuTrigger, MenuProvider } from 'react-native-popup-menu';
+import uiic from '../../../assets/images/uiic1.png'
+
 import Dimensions from 'Dimensions';
 var { height, width } = Dimensions.get('window');
 
@@ -40,10 +42,10 @@ class HeaderComponent extends Component {
     render() {
         return (
             <View style={styles.headerView}>
-                <StatusBar backgroundColor="#3CB371" barStyle="light-content" />
+                <StatusBar backgroundColor="#00AC72" barStyle="light-content" />
 
                 <View>
-                    <Image style={styles.headerLeftIconView} resizeMode='contain' source={require("C:/Users/hp/Desktop/Uiic/assets/images/uiic.png")} />
+                  <Image style={styles.headerLeftIconView} resizeMode='contain' source={uiic} />
                 </View>
 
                 <View style={styles.headerCenterTextView}>
@@ -73,7 +75,7 @@ class HeaderComponent extends Component {
 const styles = {
     headerView: {
         height: 70 / 667 * height,
-        backgroundColor: '#3CB371', //'#ff6830',
+        backgroundColor: '#00AC72', //'#ff6830',
         flexDirection: 'row',
         justifyContent: 'space-between',
         padding: 15 / 667 * height

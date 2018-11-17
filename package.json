@@ -18,6 +18,7 @@
     "react-native-image-crop-picker": "^0.21.3",
     "react-native-linear-gradient": "^2.4.0",
     "react-native-material-ripple": "^0.8.0",
+    "react-native-otp-inputs": "^1.0.0",
     "react-native-popup-menu": "^0.14.0",
     "react-native-snackbar": "^0.5.1",
     "react-native-svg": "^6.5.2",

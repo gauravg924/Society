@@ -21,15 +21,15 @@ export class Dashboard extends Component {
         super(props)
 
     }
-// MOTO 360-640
+    // MOTO 360-640
     renderRowItem = (itemOptions) => {
         return (
             <View>
                 <Ripple onPress={() => this.props.navigation.navigate('DetailList')}>
                     <View style={styles.cellStyle} >
-                        <Icon name={itemOptions.icon} size={43} color= '#3CB371'             // '#FF4500' 
+                        <Icon name={itemOptions.icon} size={36} color='#00AC72'             // '#FF4500' 
                         />
-                        <Text style={{ fontSize: 14, color: '#808080', marginTop: 10 }}>
+                        <Text style={{ fontSize: 14, color: '#696969', marginTop: 10, fontFamily: 'serif' }}>
                             {itemOptions.title}
                         </Text>
                     </View>
@@ -40,7 +40,7 @@ export class Dashboard extends Component {
 
 
     render() {
-        console.log(Dimensions.get('screen').width+"-="+Dimensions.get('screen').height)
+        console.log(Dimensions.get('screen').width + "-=" + Dimensions.get('screen').height)
         return (
             <MenuProvider>
                 <HeaderComponent />
@@ -65,31 +65,30 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection: 'column',
-        //backgroundColor: '#f9f1ed'
-         backgroundColor: '#e8d0d0'
+        //backgroundColor: '#c3c3e5'
+        //backgroundColor: '#2F4F4F'
     },
     flatListStyle: {
-        flex: 0.70, 
-        marginLeft: 10, 
-        marginRight: 10, 
+        flex: 0.70,
+        marginLeft: 10,
+        marginRight: 10,
         marginBottom: 10,
         //backgroundColor: '#fff',
-        // borderWidth: 1,
-        // borderRadius: 5,
-        //borderColor: '#ddd',
-        borderBottomWidth: 0,
+        borderWidth: 1,
+        borderRadius: 5,
+        borderColor: '#fff',
         shadowColor: '#000',
-        shadowOffset: { width: 10, height: 5 },
+        shadowOffset: { width: 15, height: 8},
         shadowOpacity: 0.8,
         shadowRadius: 2,
-        elevation: 10,
+        elevation: 13,
         backgroundColor: '#fff8f7'
     },
     cellStyle: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        width: deviceWidth / 3.1,
+        width: deviceWidth / 3.15,
         height: deviceHeight / 5,
         borderRadius: 0,
         borderWidth: 1,
@@ -101,6 +100,7 @@ const styles = StyleSheet.create({
         borderTopWidth: 0,
         backgroundColor: '#fff',
         flexDirection: 'column',
-        backgroundColor: '#fff8f7'
+        backgroundColor: '#fff8f7',
+        
     },
 });

@@ -16,7 +16,7 @@ class ButtonLoginScreenComponent extends Component {
                 {!this.props.loader
                     ?
                     <View style={styles.buttonViewStyle}>
-                        <Icon name="long-arrow-right" size={45} color='white' />
+                        <Icon name="long-arrow-right" size={45} color='#7e7e7e' />
                     </View>
                     : <ActivityIndicator style={styles.loaderStyle} size="large" color="#0000ff" />
                 }
@@ -28,10 +28,13 @@ class ButtonLoginScreenComponent extends Component {
 const styles = {
     buttonStyle: {
         marginTop: (30 / 667) * height,
+        alignItems: 'center',
+        justifyContent: 'center',
+    
       },
       buttonViewStyle: {
         borderWidth: 1,
-        borderColor: 'white',
+        borderColor: '#939393',
         borderRadius: 30,
         height: 45 / 667 * height,
         width: 80 / 375 * width,

@@ -20,7 +20,7 @@ class TextBoxLoginScreenComponent extends Component {
     render() {
         return (
             <View>
-                <TextInput style={styles.btnStyle} editable={false} placeholder={'+91'} placeholderTextColor='white' underlineColorAndroid='transparent' />
+                <TextInput style={styles.btnStyle} editable={false} placeholder={'+91'} placeholderTextColor='#7e7e7e' underlineColorAndroid='transparent' />
                 <View style={styles.bottomTextInputView}>
                     <TextInput style={[styles.textInputNumber, Platform.OS == 'android' ? { paddingBottom: 10 / 667 * height } : null]}
                         keyboardType='numeric' maxLength={10} underlineColorAndroid='transparent'
@@ -40,7 +40,7 @@ const styles = {
       paddingLeft: 5 / 375 * width,
       borderWidth: 1,
       borderRadius: 50,
-      borderColor: 'white',
+      borderColor: '#939393',
       fontSize: 18,
       fontFamily: 'Lato-Bold',
       left: -20
@@ -48,7 +48,7 @@ const styles = {
     bottomTextInputView: {
       height: 50 / 667 * height,
       width: 200 / 375 * width,
-      borderColor: 'white',
+      borderColor: '#939393',
       borderRightWidth: 1,
       borderTopWidth: 1,
       borderBottomWidth: 1,
@@ -61,7 +61,7 @@ const styles = {
       marginLeft: 36 / 375 * width,
       fontSize: 20,
       fontFamily: 'Lato-Regular',
-      color: 'white'
+      color: '#006400'
     },
 };
 
